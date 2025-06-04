@@ -6,3 +6,10 @@
   HUGO_VERSION = "0.147.4"
   HUGO_ENABLEGITINFO = "true"
   TZ = "Asia/Manila"
+
+# TBA
+# [[redirects]]
+#   from = "https://remulation.netlify.app/*"
+#   to = "https://remulation.jereme.me/:splat"
+#   status = 301
+#   force = true
