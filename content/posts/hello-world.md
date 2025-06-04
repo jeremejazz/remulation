@@ -2,7 +2,7 @@
 title = "Hello, World!"
 date = "2025-06-04T10:14:11+08:00"
 #dateFormat = "2006-01-02" # This value can be configured for per-post date formatting
-draft=false
+draft=true
 author = ""
 authorTwitter = "" #do not include @
 cover = ""
@@ -15,4 +15,6 @@ hideComments = false
 +++
 
 Welcome to Remulation. 
-This blog is currently under construction.
+
+<!--more-->
+This blog is about retro games.
