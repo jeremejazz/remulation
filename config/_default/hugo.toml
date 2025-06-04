@@ -143,8 +143,8 @@ disqusShortname = ""
     # all icons https://fontawesome.com/icons?d=gallery&m=free
     # brand icons https://fontawesome.com/icons?d=gallery&s=brands&m=free
     socialMediaLinks = [
-      { link = "https://twitter.com/TheRealLednerb", icon = "fab fa-twitter", rel = "me" },
-      { link = "https://github.com/Lednerb", icon = "fab fa-github" },
+      { link = "https://www.youtube.com/@remulation", icon = "fab fa-youtube", rel = "me" },
+      { link = "https://www.facebook.com/remulation.gaming", icon = "fab fa-facebook", rel="me" },
     ]
 
     # show an archive link in the footer
@@ -164,7 +164,7 @@ disqusShortname = ""
 # Enable/Disable Google Analytics statistics for your site
 [services]
   [services.googleAnalytics]
-    ID = ''
+    ID = 'G-0MZ8Z2B5WC'
 
 # customize your available languages for your multilingual site
 # or delete one of the [languages.xx] blocks to use the theme with only one supported language
