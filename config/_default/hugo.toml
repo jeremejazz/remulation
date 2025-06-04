@@ -1,8 +1,8 @@
 title = "Remulation"
-baseURL = "https://remulation.jereme.me/"
+baseURL = "/"
 
 # Generate the robots.txt file for SEO
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 # Change to one of your content languages defined at the end.
 defaultContentLanguage = "en"
@@ -20,6 +20,7 @@ disqusShortname = ""
 
 [params]
   enableLightDarkTheme = true
+
   # Custom CSS/JS modules that will be imported by the template.
   # Files are relative to the static/ directory or a URL.
   # Files are imported in the order they appear here, after
@@ -76,7 +77,7 @@ disqusShortname = ""
     # let hugo automatically resize and crop your images to the correct sizes
     # NB: When enabled the image files get renamed by adding additional information,
     #     even if the image has the correct sizes.
-    resizeImages = true
+    resizeImages = false
 
   # Header configuration
     # your subtitle if you want to use any
@@ -89,14 +90,14 @@ disqusShortname = ""
     customImage = "/images/avatar-dog.jpg"
 
     # define the icon you want to use for the overlay for the customImage or avatar.
-    overlayIcon = "fa-home"
+    overlayIcon = "fa-gamepad"
 
     # always display the top navigation (with pages and search) on non-mobile screens
-    permanentTopNav = false
+    permanentTopNav = true
 
     # always display the top navigation when scrolling
     # works only with permanentTopNav = true
-    stickyNav = false
+    stickyNav = true
 
     # show a language chooser in the header
     showHeaderLanguageChooser = false
@@ -142,8 +143,8 @@ disqusShortname = ""
     # all icons https://fontawesome.com/icons?d=gallery&m=free
     # brand icons https://fontawesome.com/icons?d=gallery&s=brands&m=free
     socialMediaLinks = [
-      { link = "https://twitter.com/TheRealLednerb", icon = "fab fa-twitter", rel = "me" },
-      { link = "https://github.com/Lednerb", icon = "fab fa-github" },
+      { link = "https://www.youtube.com/@remulation", icon = "fab fa-youtube", rel = "me" },
+      { link = "https://www.facebook.com/remulation.gaming", icon = "fab fa-facebook", rel="me" },
     ]
 
     # show an archive link in the footer
@@ -153,17 +154,17 @@ disqusShortname = ""
     archiveDateGrouping = "2006-01"
 
     # credits line configuration
-    copyrightBy = "by Lednerb"
+    copyrightBy = "by Jereme"
     copyrightUseCurrentYear = true  # set to true to always display the current year in the copyright
-    copyrightYearOverride = "2017"
-    copyrightUrl = "https://github.com/Lednerb"
+    copyrightYearOverride = ""
+    copyrightUrl = "https://jereme.me"
     creditsText = "Bilberry Hugo Theme"
     creditsUrl = "https://github.com/Lednerb/bilberry-hugo-theme"
 
 # Enable/Disable Google Analytics statistics for your site
 [services]
   [services.googleAnalytics]
-    ID = ''
+    ID = 'G-0MZ8Z2B5WC'
 
 # customize your available languages for your multilingual site
 # or delete one of the [languages.xx] blocks to use the theme with only one supported language
@@ -200,6 +201,7 @@ disqusShortname = ""
     endLevel = 5
     ordered = false
     startLevel = 2
+ 
 
 # do NOT change anything below
 [taxonomies]
