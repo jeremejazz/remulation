@@ -1,215 +1,89 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://blowfish.page/docs/getting-started/
+
 title = "Remulation"
-baseURL = "/"
 
-# Generate the robots.txt file for SEO
-enableRobotsTXT = false
 
-# Change to one of your content languages defined at the end.
+theme = "blowfish"
+baseURL = "https://localhost:1313"
 defaultContentLanguage = "en"
+disableLanguages = [] #to allow translation work requiring shipping to production
 
-# Enable / Disable comments on the articles via Disqus.
-disqusShortname = ""
+# pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
-[module]
-  [[module.imports]]
-    # Option 1 (recommended): adding the theme as a Hugo module
-    path = "bilberry-hugo-theme/v4"
+enableRobotsTXT = true # TODO set false on prod
+summaryLength = 30
+hasCJKLanguage = true
 
-    # Options 2 and 3: cloning/copying the theme files
-    # path = "bilberry-hugo-theme/v4"
+buildDrafts = false
+buildFuture = false
 
-[params]
-  enableLightDarkTheme = true
+enableEmoji = true
 
-  # Custom CSS/JS modules that will be imported by the template.
-  # Files are relative to the static/ directory or a URL.
-  # Files are imported in the order they appear here, after
-  # theme.css and theme.js, respectively.
-  css_modules = []
-  js_modules = []
+googleAnalytics = "G-PEDMYR1V0K"
 
-  # Description and metadata for the search engines
-  author = "Jereme"
-  description = ""
-  keywords = "blog,personal,gaming"
+languageCode = "en"
+languageName = "English"
+weight = 1
 
-  # How many articles should be displayed at once?
-  paginate = 7
 
-  # Enable / Disable MathJax
-  enable_mathjax    = false
+[pagination]
+  pagerSize = 102
 
-  # Enable / Disable algolia search
-  algolia_search    = false
-  algolia_appId     = ""
-  algolia_apiKey    = ""
-  algolia_indexName = ""
-  # Set this option to false if you want to search within all articles in all languages at once
-  algolia_currentLanguageOnly = true
+[imaging]
+  anchor = 'Center'
 
-  # Enable / Disable comments on the articles via commento
-  # commentoJsURL = "https://commento.lednerb.de/js/commento.js"
-
-  # Enable / Disable Giscus comments
-  giscus             = false
-  giscusJsUrl        = "https://giscus.app/client.js"
-  giscusRepository   = "[ENTER REPO HERE]"
-  giscusRepositoryId = "[ENTER REPO ID HERE]"
-  giscusMapping      = "pathname"
-  giscusCategory     = "[ENTER CATEGORY NAME HERE]"
-  giscusCategoryId   = "[ENTER CATEGORY ID HERE]"
-  giscusTheme        = "light"
-  giscusReactions    = "1"
-  giscusEmitMetadata = "0"
-  giscusLanguage     = "en"
-  giscusCrossOrigin  = "anonymous"
-
-  # Enable / Disable Utterances comments
-  utterances            = false
-  utterancesJsUrl       = "https://utteranc.es/client.js"
-  utterancesRepository  = "[ENTER REPO HERE]"
-  utterancesIssueTerm   = "pathname"
-  utterancesLabel       = "Comment"
-  utterancesTheme       = "github-light"
-  utterancesCrossOrigin = "anonymous"
-
-  # Media configuration
-    # let hugo automatically resize and crop your images to the correct sizes
-    # NB: When enabled the image files get renamed by adding additional information,
-    #     even if the image has the correct sizes.
-    resizeImages = false
-
-  # Header configuration
-    # your subtitle if you want to use any
-    subtitle = "Retro Gaming and Emulation"
-
-    # if you want to use libravatar or gravatar for the header image
-    avatarEmail = ""
-
-    # set an path to the image file you want to use | overwrites avatar by email
-    customImage = "/images/avatar-dog.jpg"
-
-    # define the icon you want to use for the overlay for the customImage or avatar.
-    overlayIcon = "fa-gamepad"
-
-    # always display the top navigation (with pages and search) on non-mobile screens
-    permanentTopNav = true
-
-    # always display the top navigation when scrolling
-    # works only with permanentTopNav = true
-    stickyNav = true
-
-    # show a language chooser in the header
-    showHeaderLanguageChooser = false
-
-  # Content configuration
-    # Enable an optional pinned page to display at the top of the index
-    # pinnedPost = "/article/installing-bilberry-theme/"
-    # Set to true to pin only to the first page, false to all pages
-    # pinOnlyToFirstPage = true
-
-    # enable automatic localization of the article's published date using Moment.js
-    enableMomentJs = true
-
-    # customize the date format | only works if Moment.js is disabled | only works with English month names
-    # you can customize it with the options you find here:
-    # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
-    dateFormat = "2006-01-02"
-
-    # display the estimated reading time for an article
-    showReadingTime = false
-
-    # Minimum word count to display the Table of Contents
-    tocMinWordCount = 400
-
-  # Footer configuration
-    showFooter = true
-
-    # How many articles should be displayed at latest posts in the footer?
-    # Set to -1 to hide the 'Latest Posts' column
-    amountLatestPostsInFooter = 7
-
-    # How many categories should be displayed in the footer section?
-    # Set to -1 to hide the 'Categories' column
-    amountCategoriesInFooter = 7
-
-    # show a language chooser in the footer
-    showFooterLanguageChooser = true
-
-    # social media profile urls for the footer links
-    showSocialMedia = true
-
-    # define your links with FontAwesome 5 (only free icons are supported)
-    # all icons https://fontawesome.com/icons?d=gallery&m=free
-    # brand icons https://fontawesome.com/icons?d=gallery&s=brands&m=free
-    socialMediaLinks = [
-      { link = "https://www.youtube.com/@remulation", icon = "fab fa-youtube", rel = "me" },
-      { link = "https://www.facebook.com/remulation.gaming", icon = "fab fa-facebook", rel="me" },
-    ]
-
-    # show an archive link in the footer
-    showArchive = true
-
-    # archive grouping: "2006" by year, "2006-01" by month
-    archiveDateGrouping = "2006-01"
-
-    # credits line configuration
-    copyrightBy = "by Jereme"
-    copyrightUseCurrentYear = true  # set to true to always display the current year in the copyright
-    copyrightYearOverride = ""
-    copyrightUrl = "https://jereme.me"
-    creditsText = "Bilberry Hugo Theme"
-    creditsUrl = "https://github.com/Lednerb/bilberry-hugo-theme"
-
-# Enable/Disable Google Analytics statistics for your site
-[services]
-  [services.googleAnalytics]
-    ID = 'G-0MZ8Z2B5WC'
-
-# customize your available languages for your multilingual site
-# or delete one of the [languages.xx] blocks to use the theme with only one supported language
-[languages]
-  [languages.en]
-    weight = 1
-  # [languages.ph]
-  #   weight = 2
-  #   title = "Remulasyon"
-  #   [languages.ph.params]
-  #     subtitle = "Mga laro ng kahapon"
-
-[markup]
-  defaultMarkdownHandler = 'goldmark'
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      # change to 'true' if you need to render raw HTML within your markdown content
-      unsafe = false
-  [markup.highlight]
-    anchorLineNos = false
-    codeFences = true
-    guessSyntax = false
-    # hl_Lines = ''
-    # hl_inline = false
-    lineAnchors = ''
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    noHl = false
-    style = 'monokai'
-    tabWidth = 4
-  [markup.tableOfContents]
-    endLevel = 5
-    ordered = false
-    startLevel = 2
- 
-
-# do NOT change anything below
 [taxonomies]
-  author   = "author"
-  tag      = "tags"
+  tag = "tags"
   category = "categories"
-  series   = "series"
+  author = "authors"
+  series = "series"
+  # post = "posts"
+
+[sitemap]
+  changefreq = 'always'
+  filename = 'sitemap.xml'
+  priority = 0.5
 
 [outputs]
-  home = [ "HTML", "JSON", "RSS" ]
-  page = [ "HTML" ]
+  home = ["HTML", "RSS", "JSON"]
+
+[related]
+  threshold = 0
+  toLower = false
+
+    [[related.indices]]
+        name = "tags"
+        weight = 100
+
+    [[related.indices]]
+        name = "categories"
+        weight = 100
+
+    [[related.indices]]
+        name = "series"
+        weight = 50
+
+    [[related.indices]]
+        name = "authors"
+        weight = 20
+
+    [[related.indices]]
+        name = "date"
+        weight = 10
+
+    [[related.indices]]
+      applyFilter = false
+      name = 'fragmentrefs'
+      type = 'fragments'
+      weight = 10
+
+# Render only specific parts of the site for faster development. Use: hugo --renderSegments site_core
+[segments]
+  [segments.site_core]
+    [[segments.site_core.includes]]
+      path = '{/,/posts,/posts/**,/samples,/samples/**}'
+  [segments.en_only]
+    [[segments.en_only.includes]]
+      lang = 'en'

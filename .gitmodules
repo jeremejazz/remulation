@@ -1,3 +1,4 @@
-[submodule "themes/bilberry-hugo-theme"]
-	path = themes/bilberry-hugo-theme
-	url = https://gitlab.com/jeremejazz/bilberry-hugo-theme.git
+[submodule "themes/blowfish"]
+	path = themes/blowfish
+	url = https://github.com/jeremejazz/hugo-blowfish-theme.git
+	branch = main

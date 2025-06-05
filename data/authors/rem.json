@@ -1,0 +1,10 @@
+{
+    "name": "Rem",
+    "image" : "images/avatar-dog.jpg",
+    "bio": "Blogger",
+    "social": [
+     { "youtube" : "https://youtube.com/@remulation" },
+     { "facebook" : "https://facebook.com/remulation.gaming" },
+     { "link" : "https://jereme.me" }
+    ]
+}

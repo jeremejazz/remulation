@@ -5,8 +5,10 @@ draft: true
 
 categories: []
 tags: [guide, emulation]
-toc: false
-author: ""
+
+authors: 
+  - "rem"
+
 ---
 
 Interested in emulating
