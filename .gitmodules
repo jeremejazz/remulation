@@ -1,4 +1,4 @@
 [submodule "themes/blowfish"]
 	path = themes/blowfish
 	url = https://github.com/jeremejazz/hugo-blowfish-theme.git
-	branch = main
+	branch = lite
